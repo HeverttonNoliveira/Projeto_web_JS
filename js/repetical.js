@@ -23,3 +23,14 @@ let i
 for(i=0; i<10; i++){
     console.log(`tyftf ${i}`)
 }
+
+//FOR E FOR
+
+for(let v=0; v<5; v++){
+    for(let z=0; z<2; z++){
+        console.log(`tipo ${v} Linha ${z}`)
+    }
+    
+}
+
+
