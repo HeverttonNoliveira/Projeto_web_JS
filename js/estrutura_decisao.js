@@ -54,7 +54,8 @@ if(periodo === 1){
     saudacao = "Nenhum periodo selecionado";
 }
 
-console.log(`E ai, ${saudacao}`);
+console.log(`E ai, ${saudacao}`); 
+
 
 
 
