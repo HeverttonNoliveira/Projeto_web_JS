@@ -18,3 +18,4 @@ switch(opcao){
 
 console.log(`Você escolheu ${fruta}`)
 
+
