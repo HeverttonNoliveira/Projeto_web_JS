@@ -5,15 +5,15 @@ const Car ={
     modelo:"Vulcan",
     km:1500,
     combustivel:"hibrido",
-    acelera:20,
+    acelera:200,
 
 
-    acelera : function(){
-        return Car.acelera++
+    velocidade : function(acelera){
+        return this.acelera+1
     }
 }
 
-let vel = Car.acelera(100)
+let vel = Car.velocidade()
 console.log(`Acelera,${vel}`)
 
 
