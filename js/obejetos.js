@@ -1,21 +1,20 @@
 //criando obejetos
-const Car ={
-    marca:"Aston Martin",
-    cor:"Preto",
-    modelo:"Vulcan",
-    km:1500,
-    combustivel:"hibrido",
-    acelera:200,
+const Car = {
+	marca: "Aston Martin",
+	cor: "Preto",
+	modelo: "Vulcan",
+	km: 1500,
+	combustivel: "hibrido",
+	acelera: 200,
 
+	velocidade: function (acelera) {
+		return this.acelera + 1;
+	},
+};
 
-    velocidade : function(acelera){
-        return this.acelera+1
-    }
-}
-
-let vel = Car.velocidade()
-console.log(`Acelera,${vel}`)
-
+//usar this ao inves da variavel do obj...
+let vel = this.velocidade();
+console.log(`Acelera,${vel}`);
 
 // const Game ={
 //     Desenvolvedora: "Capcom",
@@ -26,3 +25,4 @@ console.log(`Acelera,${vel}`)
 
 // console.log(`A criadora da franquia ${Game.Franquia}, é a empresa japonesa ${Game.Desenvolvedora}\n
 // E possui ${Game.Jogos} jogos no total, e seu mas conhecido é ${Game.Maior}`)
+
