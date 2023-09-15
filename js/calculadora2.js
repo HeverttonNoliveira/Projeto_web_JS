@@ -1,14 +1,9 @@
 //Variáveis
 let v1, v2;
-let operacao, rep = 0
+let operacao,
+	rep ;
 
-v1 = document.getElementById("num1").value
-v2 = document.getElementById("num2").value
-
-
-operacao = document.getElementById("ope").value
-
-//Obejeto
+//Objeto
 const calculadora = {
 	num1: 10.5,
 	num2: 20.5,
@@ -42,7 +37,15 @@ const calculadora = {
 
 //Calculadora
 
-function resp(){
+function resp() {
+	v1 = +document.getElementById("num1").value;
+	v2 = +document.getElementById("num2").value;
+
+	operacao = +document.getElementById("ope").value;
+	// console.log(v1);
+	// console.log(v2);
+	// console.log(operacao);
+
 	switch (operacao) {
 		case 1:
 			rep = calculadora.soma(v1, v2);
@@ -57,6 +60,8 @@ function resp(){
 			rep = calculadora.div(v1, v2);
 			break;
 	}
+	document.getElementById("resultado").innerHTML = rep;
+	console.log(rep);
 }
-document.getElementById("resultado").innerHTML = rep
-console.log(v1)
+
+
