@@ -7,19 +7,26 @@
 	</head>
 	<body>
 		<p>Calculadora 2.0</p>
-		<p>Insira dos números e escolha a operação desejada.</p>
-		<p>Operação</p>
-		<p>1-soma</p>
-		<p>2-subtração</p>
-		<p>3-multiplicação</p>
-		<p>4-divisão</p>
 
-		<form action="">
-			Insira números: <input type="number" name="number" id="n1" /> 
-			Insira números: <input type="number" name="number" id="n2" />
-			<input type="button" value="calcular" onclick="somavalor()">
+		<forms action="">
+			<p>Insira números:</p>
+			<input type="number" name="number" id="num1" />
+			<br /><br />
+
+			<p>Insira números:</p>
+			<input type="number" name="number" id="num2" /><br /><br />
+
+			<p>Escolha a operação</p>
+			<p>1-Soma</p>
+			<p>2-Subtração</p>
+			<p>3-Multiplicação</p>
+			<p>4-Divisão</p>
+
+			<input type="number" name="number" id="ope"></input>
+
+			<input type="button" value="calcular" onclick="resp()"></input>
+			<p id="resultado"> </p>
 		</form>
-
 
 		<script src="js/calculadora2.js"></script>
 	</body>
